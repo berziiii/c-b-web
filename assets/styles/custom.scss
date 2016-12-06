@@ -1,0 +1,46 @@
+// Loading Section
+
+.loading-section {
+  position: fixed;
+  height: 100vh;
+  width: 51%;
+  background-color: $navy;
+  z-index: 1000;
+}
+
+.loading-left {
+  left: 0;
+}
+
+.loading-right {
+  right: 0;
+}
+
+.loading-icon {
+  position: fixed;
+  left: 42.5vw;
+  top: 42.5vh;
+  z-index: 1001;
+  vertical-align: middle;
+  background: url(../images/BC-logo.png) no-repeat center center;
+  background-size: cover;
+  width: 15vw;
+  height: 15vw;
+}
+
+.slide-left {
+  transform: translateX(-200%);
+  // left: -100$;
+  transition: transform .3s 1.5s ease-out;
+}
+
+.slide-right {
+  transform: translateX(200%);
+  // right: -100%;
+  transition: transform .3s 1.5s ease-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity .3s 1.5s ease-out;
+}
