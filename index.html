@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/owl-carousel/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/owl-carousel/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" media="all" />
   <link href="assets/styles/index.min.css" rel="stylesheet" type="text/css" media="all" />
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700%7CLibre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
 </head>
@@ -20,19 +23,50 @@
   <div id="loading-icon" class="loading-icon">
   </div>
 
+  <div id="responsive-nav" class="hide-responsive-nav">
+    <div class="close-nav">+</div>
+    <ul>
+      <li>
+        <h1>
+          <a href="#wedding-section" class="inner-link res-nav" target="default">wedding</a>
+        </h1>
+      </li>
+      <li>
+        <h1>
+          <a href="#accomm-section" class="inner-link res-nav" target="default">accomm</a>
+        </h1>
+      </li>
+      <li>
+        <h1>
+          <a href="#registry-section" class="inner-link res-nav" target="default">registry</a>
+        </h1>
+      </li>
+      <li>
+        <h1>
+          <a href="#rsvp-section" class="inner-link res-nav" target="default">rsvp</a>
+        </h1>
+      </li>
+      <li>
+        <h1>
+          <a href="#gallery-section" class="inner-link res-nav" target="default">gallery</a>
+        </h1>
+      </li>
+    </ul>
+  </div>
 
   <div class="nav-container">
     <nav class="nav nav-1 transparent light">
-      <a href="index.html" class="logo">
-        <span>BRIAN &amp; CANDACE</span>
-      </a>
+        <span id="nav-top">
+        </span>
+        <span>
+          <a href="#nav-top" class="logo">BRIAN &amp; CANDACE</a>
+        </span>
       <ul class="menu">
-        <li><a href="#home" class="inner-link" target="default">home</a></li>
-        <!-- <li><a href="#story" class="inner-link" target="default">our story</a></li> -->
-        <li><a href="#wedding" class="inner-link" target="default">wedding</a></li>
-        <li><a href="#accomm" class="inner-link" target="default">accomm</a></li>
-        <li><a href="#registry" class="inner-link" target="default">registry</a></li>
-        <li><a href="#rsvp" class="inner-link" target="default">rsvp</a></li>
+        <li><a href="#wedding-section" class="inner-link" target="default">wedding</a></li>
+        <li><a href="#accomm-section" class="inner-link" target="default">accomm</a></li>
+        <li><a href="#registry-section" class="inner-link" target="default">registry</a></li>
+        <li><a href="#rsvp-section" class="inner-link" target="default">rsvp</a></li>
+        <li><a href="#gallery-section" class="inner-link" target="default">gallery</a></li>
       </ul>
       <div class="mobile-toggle">
         <div class="line-1"></div>
@@ -51,7 +85,7 @@
         <!-- <img alt="Background image" class="background-image" src="assets/images/hero1.jpg"> -->
       </div>
 
-      <div class="container">
+      <div id="top" class="container">
         <div class="row">
           <div class="text-center col-sm-12">
             <h1>BRIAN &amp; CANDACE</h1>
@@ -106,9 +140,9 @@
       </div>
     </section>
 
-    <a id="wedding" class="in-page-link"></a>
+    <!-- <a  class="in-page-link"></a> -->
 
-    <section class="details details-3">
+    <section id="wedding-section" class="details details-3">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
@@ -137,9 +171,9 @@
       </div>
     </section>
 
-    <a id="accomm" class="in-page-link"></a>
+    <!-- <a id="accomm-section" class="in-page-link"></a> -->
 
-    <section class="accom accom-2 bg-secondary">
+    <section id="accomm-section" class="accom accom-2 bg-secondary">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
@@ -190,9 +224,9 @@
       </div>
     </section>
 
-    <a id="registry" class="in-page-link"></a>
+    <!-- <a id="registry-section" class="in-page-link"></a> -->
 
-    <section class="registry registry-1 registry-3 overlay-light parallax">
+    <section id="registry-section" class="registry registry-1 registry-3 overlay-light parallax">
 
       <div class="background-image-holder">
         <img alt="Background image" class="background-image" src="assets/images/hero6.jpg">
@@ -235,9 +269,9 @@
       </div>
     </section>
 
-    <a id="rsvp" class="in-page-link"></a>
+    <!-- <a id="rsvp-section" class="in-page-link"></a> -->
 
-    <section class="rsvp rsvp-2">
+    <section id="rsvp-section" ass="rsvp rsvp-2">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
@@ -299,18 +333,13 @@
       </div>
     </section>
 
-    <section class="gallery gallery-2 overlay">
-      <div class="instafeed" data-user-name="katiestoops">
-        <ul></ul>
+    <section id="gallery-section" class="gallery gallery-2 overlay">
+      <div id="owl-gallery" class="owl-carousel owl-theme">
       </div>
-
+    </section>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <a href="#">
-              <h1>#sam+aisha</h1>
-              <h6>Share the day on Instagram</h6>
-            </a>
           </div>
         </div>
       </div>
@@ -325,11 +354,9 @@
       </div>
     </footer>
   </div>
-
-
   <script src="assets/jquery/jquery.min.js"></script>
-  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script> -->
+  <script src="assets/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/scripts/index.min.js"></script>
 </body>

@@ -90,7 +90,7 @@ module.exports = function(grunt) {
               },
             },
             files: {
-              'test/assets/scripts/index.min.js': ['assets/scripts/*.js']
+              'test/assets/scripts/index.min.js': ['assets/scripts/*']
             },
           },
         },
@@ -145,13 +145,16 @@ module.exports = function(grunt) {
                     ],
                     dest: 'dist/assets/jquery/'
                   },
-                  // {
-                  //   cwd: 'assets/styles/',
-                  //   src: [
-                  //       'index.min.css',
-                  //   ],
-                  //   dest: 'dist/assets/styles/'
-                  // }
+                  {
+                    cwd: 'assets/owl-carousel/',
+                    src: [
+                        'owl-carousel/owl.carousel.min.js',
+                        'owl-carousel/owl.carousel.css',
+                        'owl-carousel/owl.theme.css',
+                        'owl-carousel/owl.transitions.css',
+                    ],
+                    dest: 'dist/assets/owl-carousel/'
+                  },
                 ],
                 verbose: true
             }

@@ -181,9 +181,9 @@ h4,
 h5,
 h6,
 .menu li a,
-.logo span {
+span a.logo {
   font-family: 'Lato', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  color: $white;
   margin: 0;
   cursor: default;
 }
@@ -321,6 +321,11 @@ a:active {
   text-decoration: none;
   cursor: pointer !important;
 }
+a.logo:hover,
+.menu > li > a.inner-link:hover {
+  color: $navy;
+  // transition: border-top .25s ease-out;
+}
 .btn {
   border: 1px solid $navy;
   color: $navy;
@@ -365,7 +370,7 @@ a:active {
   // background: $navy;
   // background-size: cover !important;
   // background-position: 50% 50% !important;
-  background: url('../images/edits-0103.jpg') no-repeat center center fixed;
+  background: url('../images/edits-0103.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -426,7 +431,7 @@ nav {
 .logo {
   float: left;
 }
-.logo span {
+span a.logo {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 300;
@@ -468,7 +473,7 @@ nav {
   -moz-transition: all 0.3s ease;
   margin-right: 0;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 800px) {
   .nav-1 {
     height: auto;
     max-height: 60px;
@@ -531,7 +536,7 @@ nav {
 .mobile-toggle:hover .line-3 {
   opacity: 1;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 800px) {
   .mobile-toggle {
     display: block;
   }
@@ -1020,7 +1025,7 @@ nav.light.scrolled .line-3 {
   height: 600px;
 }
 .gallery-2:before {
-  opacity: .6;
+  opacity: .3;
 }
 .gallery-2 .instafeed,
 .gallery-2 .instafeed ul {

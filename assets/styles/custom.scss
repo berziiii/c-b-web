@@ -31,16 +31,84 @@
 .slide-left {
   transform: translateX(200%);
   // left: -100$;
-  transition: transform .5s 2s ease-out;
+  transition: transform 1s 1.5s ease-out;
 }
 
 .slide-right {
   transform: translateX(-200%);
   // right: -100%;
-  transition: transform .5s 2s ease-out;
+  transition: transform 1s 1.5s ease-out;
 }
 
 .fade-out {
   opacity: 0;
-  transition: opacity 2s ease-out;
+  transition: opacity 1.75s ease-out;
+}
+
+// Responsive Nav
+
+.show-responsive-nav {
+  padding-top: 20vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: $navy;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all .25s ease-out;
+}
+
+.hide-responsive-nav {
+  padding-top: 20vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: $navy;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all .25s ease-in;
+}
+
+.show-responsive-nav ul,
+.hide-responsive-nav ul {
+  width: 100%;
+  display: block;
+  color: $white;
+  text-align: center;
+  transition: all .25s ease-in;
+}
+
+.show-responsive-nav li,
+.hide-responsive-nav li {
+  color: $white;
+  font-size: 36px;
+  text-align: center;
+  padding: 3vh 0px;
+}
+
+.show-responsive-nav li a,
+.hide-responsive-nav li a  {
+  color: $white;
+}
+
+.close-nav {
+  cursor: pointer;
+  position: absolute;
+  top: 2vh;
+  right: 1vw;
+  font-size: 100px;
+  transform: rotate(45deg);
+  color: $white;
+}
+
+
+
+.slide-item {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
 }
