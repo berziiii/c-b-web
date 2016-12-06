@@ -11,6 +11,7 @@ assets/scripts/*.min.js
 *.ttf
 *.eot
 
+
 # Created by https://www.gitignore.io/api/node,osx,linux,windows,ruby,node,rails,express,ember
 
 ### Node ###

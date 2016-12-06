@@ -28,30 +28,30 @@
 }
 
 .slide-left {
-  -webkit-transform: translateX(-200%);
-      -ms-transform: translateX(-200%);
-       -o-transform: translateX(-200%);
-          transform: translateX(-200%);
-  -webkit-transition: -webkit-transform .3s 1.5s ease-out;
-       -o-transition: -o-transform .3s 1.5s ease-out;
-          transition: transform .3s 1.5s ease-out;
-}
-
-.slide-right {
   -webkit-transform: translateX(200%);
       -ms-transform: translateX(200%);
        -o-transform: translateX(200%);
           transform: translateX(200%);
-  -webkit-transition: -webkit-transform .3s 1.5s ease-out;
-       -o-transition: -o-transform .3s 1.5s ease-out;
-          transition: transform .3s 1.5s ease-out;
+  -webkit-transition: -webkit-transform .5s 2s ease-out;
+       -o-transition: -o-transform .5s 2s ease-out;
+          transition: transform .5s 2s ease-out;
+}
+
+.slide-right {
+  -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+       -o-transform: translateX(-200%);
+          transform: translateX(-200%);
+  -webkit-transition: -webkit-transform .5s 2s ease-out;
+       -o-transition: -o-transform .5s 2s ease-out;
+          transition: transform .5s 2s ease-out;
 }
 
 .fade-out {
   opacity: 0;
-  -webkit-transition: opacity .3s 1.5s ease-out;
-       -o-transition: opacity .3s 1.5s ease-out;
-          transition: opacity .3s 1.5s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+       -o-transition: opacity 2s ease-out;
+          transition: opacity 2s ease-out;
 }
 
 .flex-container a:active,

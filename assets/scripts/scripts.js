@@ -1,13 +1,5 @@
 'use strict';
 
-$(document).ready(function() {
-  setTimeout(function(){
-          $('#section-right').addClass('slide-right');
-          $('#section-left').addClass('slide-left');
-          $('#loading-icon').addClass('fade-out');
-      }, 2000);
-});
-
 // $(document).ready(function() {
 //
 //     "use strict";
