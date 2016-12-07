@@ -19,7 +19,7 @@ module.exports = function(grunt) {
               style: 'expanded'
             },
             files: {                         // Dictionary of files
-              'assets/styles/index.css': 'assets/styles/index.scss'       // 'destination': 'source'
+              'test/assets/styles/index.css': 'assets/styles/index.scss'       // 'destination': 'source'
             }
           }
         },
@@ -39,8 +39,8 @@ module.exports = function(grunt) {
                 options: {
                     flatten: true
                 },
-                src: 'assets/styles/index.css',
-                dest: 'test/assets/styles/index.css'
+                src: 'test/assets/styles/index.css',
+                dest: 'test/assets/styles/index.pref.css'
             },
         },
         // Minify CSS
@@ -48,8 +48,8 @@ module.exports = function(grunt) {
             minify: {
                 expand: true,
                 cwd: 'test/assets/styles/',
-                src: ['index.css'],
-                dest: 'dist/assets/styles/',
+                src: ['index.pref.css'],
+                dest: 'assets/styles/',
                 ext: '.min.css'
             },
         },
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                 collapseWhitespace: true
               },
               files: {                                   // Dictionary of files
-                'dist/index.html': 'index.html',     // 'destination': 'source'
+                'test/index.html': 'index.html',     // 'destination': 'source'
               }
             }
         },
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
               },
             },
             files: {
-              'test/assets/scripts/index.min.js': ['assets/scripts/*']
+              'test/assets/scripts/index.min.js': ['assets/scripts/*.js']
             },
           },
         },
@@ -101,11 +101,11 @@ module.exports = function(grunt) {
               'test/assets/scripts/index.min.js'
             ],
             dest: [
-              'dist/assets/scripts/'
+              './'
             ]
           },
           options : {
-            sourcemap: true,
+            sourcemap: false,
             allinone: false
           }
         },
@@ -155,6 +155,27 @@ module.exports = function(grunt) {
                     ],
                     dest: 'dist/assets/owl-carousel/'
                   },
+                  {
+                    cwd: '',
+                    src: [
+                        'index.min.js',
+                    ],
+                    dest: 'dist/'
+                  },
+                  {
+                    cwd: 'assets/styles/',
+                    src: [
+                        'index.min.css',
+                    ],
+                    dest: 'dist/assets/styles/'
+                  },
+                  {
+                    cwd: 'test/',
+                    src: [
+                        'index.html',
+                    ],
+                    dest: 'dist/'
+                  },
                 ],
                 verbose: true
             }
@@ -172,12 +193,6 @@ module.exports = function(grunt) {
                     title: 'SASS -> CSS',
                     message: 'Compiled, prefixed, and moved successfully',
                 }
-            },
-            html_change: {
-              options: {
-                title: 'HTML Change',
-                message: 'Compiled, minified and moved html successfully',
-              }
             }
         },
         //- Watchers
@@ -185,27 +200,23 @@ module.exports = function(grunt) {
             options: {
               livereload: true,
             },
-            grunt: {
-              files: ['gruntfile.js'],
-              tasks: ['sass', 'autoprefixer', 'cssmin', 'concat', 'minified', 'sync', 'htmlmin']
-            },
+            // grunt: {
+            //   files: ['gruntfile.js'],
+            //   tasks: ['']
+            // },
             css: {
               files: ['assets/styles/*.scss'],
-              tasks: ['sass', 'autoprefixer', 'cssmin', 'sync', 'htmlmin']
+              tasks: ['sass', 'autoprefixer', 'cssmin']
             },
             scripts: {
-              files: ['assets/scripts/*'],
-              tasks: ['concat', 'minified', 'htmlmin']
+              files: ['assets/scripts/*.js'],
+              tasks: ['concat', 'minified']
             },
-            html: {
-              files: ['index.html'],
-              tasks: ['htmlmin']
-            }
         },
     });
     //- REGISTER ALL OUR GRUNT TASKS
     grunt.task.run('notify_hooks');
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'minified', 'sync', 'htmlmin', 'image:dynamic']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'minified', 'htmlmin', 'sync', 'image:dynamic']);
     grunt.registerTask('app_change', ['concat:app', 'uglify:app', 'uglify:main']);
     grunt.registerTask('concat_change', ['uglify:app']);
     grunt.registerTask('css_prefixed', ['autoprefixer']);

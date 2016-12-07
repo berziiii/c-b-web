@@ -21,24 +21,37 @@
   z-index: 1001;
   vertical-align: middle;
   background: url(../images/BC-logo.png) no-repeat center center;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   width: 20vw;
   height: 20vw;
 }
 
 .slide-left {
-  transform: translateX(200%);
-  transition: transform 1.5s 2s ease-out;
+  -webkit-transform: translateX(200%);
+      -ms-transform: translateX(200%);
+       -o-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: -webkit-transform 1.5s 2s ease-out;
+       -o-transition: -o-transform 1.5s 2s ease-out;
+          transition: transform 1.5s 2s ease-out;
 }
 
 .slide-right {
-  transform: translateX(-200%);
-  transition: transform 1.5s 2s ease-out;
+  -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+       -o-transform: translateX(-200%);
+          transform: translateX(-200%);
+  -webkit-transition: -webkit-transform 1.5s 2s ease-out;
+       -o-transition: -o-transform 1.5s 2s ease-out;
+          transition: transform 1.5s 2s ease-out;
 }
 
 .fade-out {
   opacity: 0;
-  transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+       -o-transition: opacity 2s ease-out;
+          transition: opacity 2s ease-out;
 }
 
 .show-responsive-nav {
@@ -51,7 +64,9 @@
   top: 0;
   right: 0;
   opacity: 1;
-  transition: all .25s ease-out;
+  -webkit-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
 }
 
 .hide-responsive-nav {
@@ -64,7 +79,9 @@
   top: 0;
   right: 0;
   opacity: 0;
-  transition: all .25s ease-in;
+  -webkit-transition: all .25s ease-in;
+       -o-transition: all .25s ease-in;
+          transition: all .25s ease-in;
 }
 
 .show-responsive-nav ul,
@@ -73,7 +90,9 @@
   display: block;
   color: #fff;
   text-align: center;
-  transition: all .25s ease-in;
+  -webkit-transition: all .25s ease-in;
+       -o-transition: all .25s ease-in;
+          transition: all .25s ease-in;
 }
 
 .show-responsive-nav li,
@@ -95,7 +114,10 @@
   top: 2vh;
   right: 1vw;
   font-size: 100px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
   color: #fff;
 }
 
@@ -164,12 +186,8 @@ html[xmlns] .slides {
   background: #fff;
   border: 4px solid #fff;
   position: relative;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   zoom: 1;
@@ -178,7 +196,6 @@ html[xmlns] .slides {
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -215,8 +232,8 @@ html[xmlns] .slides {
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   cursor: pointer;
 }
 
@@ -322,11 +339,9 @@ html[xmlns] .slides {
   background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   text-indent: -9999px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 20px;
-  -o-border-radius: 50%;
   border-radius: 50%;
-  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
 }
@@ -436,7 +451,8 @@ body.boxed-layout nav.overlay {
 }
 
 .main-container {
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   clear: both;
@@ -455,7 +471,9 @@ ul {
 .v-align {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+      transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
 }
@@ -531,7 +549,9 @@ section.fullscreen {
 section.fullscreen .container {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+      transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
 }
@@ -563,7 +583,9 @@ section.bg-primary li {
 
   section.fullscreen:not(.header) .container {
     top: 0;
-    transform: translateY(0);
+    -ms-transform: translateY(0);
+     -o-transform: translateY(0);
+        transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
   }
@@ -762,7 +784,8 @@ a.logo:hover,
   font-weight: 700;
   padding: 0;
   border-radius: 0;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
@@ -797,10 +820,9 @@ a.logo:hover,
   z-index: 1;
   background: url("../images/edits-0103.jpg") no-repeat center center;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
@@ -812,8 +834,12 @@ a.logo:hover,
 .parallax .background-image-holder {
   height: 150%;
   top: -30%;
-  transition: all 0s ease !important;
-  transition: opacity 0.3s ease !important;
+  -webkit-transition: all 0s ease !important;
+       -o-transition: all 0s ease !important;
+          transition: all 0s ease !important;
+  -webkit-transition: opacity 0.3s ease !important;
+       -o-transition: opacity 0.3s ease !important;
+          transition: opacity 0.3s ease !important;
 }
 
 /*!---------- SLIDERS ----------*/
@@ -838,7 +864,8 @@ a.logo:hover,
 /*!---------- NAVIGATION ----------*/
 nav {
   position: relative;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
@@ -848,7 +875,8 @@ nav {
   max-height: 60px;
   padding: 15px 30px;
   background: #fff;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
@@ -879,7 +907,8 @@ span a.logo {
 .menu li {
   float: left;
   margin-right: 32px;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: .5;
@@ -906,7 +935,8 @@ span a.logo {
   letter-spacing: 2px;
   margin-right: -2px;
   font-size: 11px;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   margin-right: 0;
@@ -926,10 +956,13 @@ span a.logo {
   .menu {
     width: 100%;
     margin-top: 20px;
-    transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+     -o-transform: translateX(-50px);
+        transform: translateX(-50px);
     -webkit-transform: translateX(-50px);
     -moz-transform: translateX(-50px);
-    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+       transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
   }
@@ -946,7 +979,9 @@ span a.logo {
   }
 
   .nav-open .menu {
-    transform: translateX(0);
+    -ms-transform: translateX(0);
+     -o-transform: translateX(0);
+        transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
   }
@@ -971,7 +1006,8 @@ span a.logo {
   height: 4px;
   background: #222;
   margin-bottom: 4px;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: .4;
@@ -1084,24 +1120,31 @@ nav.light.scrolled .line-3 {
 .header .container {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+      transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
 }
 
 .header.fadeContent .row {
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: 0;
-  transform: translateY(100px);
+  -ms-transform: translateY(100px);
+   -o-transform: translateY(100px);
+      transform: translateY(100px);
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
 }
 
 .header.fadeContent.fadeIn .row {
   opacity: 1;
-  transform: translateY(0);
+  -ms-transform: translateY(0);
+   -o-transform: translateY(0);
+      transform: translateY(0);
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
 }
@@ -1128,17 +1171,33 @@ nav.light.scrolled .line-3 {
 }
 
 .burns-effect .background-image-holder {
-  animation: kenBurns 25s ease-out infinite alternate;
+  -o-animation: kenBurns 25s ease-out infinite alternate;
+     animation: kenBurns 25s ease-out infinite alternate;
   -webkit-animation: kenBurns 25s ease-out infinite alternate;
+}
+
+@-o-keyframes kenBurns {
+  from {
+    -o-transform: scale(1);
+       transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  to {
+    -o-transform: scale(1.4);
+       transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+  }
 }
 
 @keyframes kenBurns {
   from {
-    transform: scale(1);
+    -o-transform: scale(1);
+       transform: scale(1);
     -webkit-transform: scale(1);
   }
   to {
-    transform: scale(1.4);
+    -o-transform: scale(1.4);
+       transform: scale(1.4);
     -webkit-transform: scale(1.4);
   }
 }
@@ -1252,17 +1311,22 @@ nav.light.scrolled .line-3 {
 .story-2 img {
   max-width: 345px;
   display: inline-block;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  transform: scale(1);
+  -ms-transform: scale(1);
+   -o-transform: scale(1);
+      transform: scale(1);
   -webkit-transform: scale(1);
   position: relative;
   z-index: 1;
 }
 
 .story-2 img:hover {
-  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+   -o-transform: scale(1.1);
+      transform: scale(1.1);
   -webkit-transform: scale(1.1);
   z-index: 2;
   opacity: 1;
@@ -1270,7 +1334,9 @@ nav.light.scrolled .line-3 {
 
 .story-2 img.fade {
   opacity: .3;
-  transform: scale(0.94);
+  -ms-transform: scale(0.94);
+   -o-transform: scale(0.94);
+      transform: scale(0.94);
   -webkit-transform: scale(0.94);
 }
 
@@ -1309,12 +1375,16 @@ nav.light.scrolled .line-3 {
 
   .story-2 img.fade {
     opacity: 1;
-    transform: scale(1);
+    -ms-transform: scale(1);
+     -o-transform: scale(1);
+        transform: scale(1);
     -webkit-transform: scale(1);
   }
 
   .story-2 img:hover {
-    transform: scale(1);
+    -ms-transform: scale(1);
+     -o-transform: scale(1);
+        transform: scale(1);
     -webkit-transform: scale(1);
   }
 }
@@ -1378,7 +1448,8 @@ nav.light.scrolled .line-3 {
 .details-2 {
   background: #022648;
   padding: 180px 0;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
@@ -1577,7 +1648,8 @@ nav.light.scrolled .line-3 {
 .gallery-2 .instafeed li {
   width: 20%;
   float: left;
-  background-size: cover !important;
+  -webkit-background-size: cover !important;
+          background-size: cover !important;
   height: 50%;
 }
 
@@ -1588,7 +1660,9 @@ nav.light.scrolled .line-3 {
 .gallery-2 .container {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+      transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   z-index: 3;
@@ -1717,7 +1791,8 @@ nav.light.scrolled .line-3 {
   display: block;
   line-height: 40px;
   margin-bottom: 60px;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: .5;
@@ -1786,33 +1861,59 @@ input[type="submit"]:focus {
   -webkit-animation-iteration-count: infinite;
   -moz-animation: pulsate 1s ease-out;
   -moz-animation-iteration-count: infinite;
-  animation: pulsate 1s ease-out;
-  animation-iteration-count: infinite;
+  -webkit-animation: pulsate 1s ease-out;
+       -o-animation: pulsate 1s ease-out;
+          animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-@keyframes pulsate {
+@-o-keyframes pulsate {
   0% {
-    transform: scale(0.1);
+    -o-transform: scale(0.1);
+       transform: scale(0.1);
     opacity: 0.0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    transform: scale(1.2);
+    -o-transform: scale(1.2);
+       transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1);
+         -o-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2);
     opacity: 0;
   }
 }
 @-webkit-keyframes pulsate {
   0% {
-    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
     opacity: 0.0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     opacity: 0;
   }
 }
@@ -1844,7 +1945,8 @@ input[type="submit"]:focus {
   font-family: 'Lato';
   margin: 0 16px;
   color: #022648;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: .7;
@@ -1913,7 +2015,8 @@ input[type="submit"]:focus {
   font-weight: 700;
   padding: 0;
   border-radius: 0;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   background: none;
@@ -1972,7 +2075,8 @@ input[type="submit"]:focus {
 .form-error,
 .form-success {
   display: none;
-  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   position: absolute;
@@ -2006,5 +2110,3 @@ footer {
   color: #aaa;
   font-weight: 400;
 }
-
-/*# sourceMappingURL=index.css.map */

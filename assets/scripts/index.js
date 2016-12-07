@@ -6,7 +6,7 @@ $(document).ready(function() {
           $('#section-right').addClass('slide-right');
           $('#section-left').addClass('slide-left');
           $('#loading-icon').addClass('fade-out');
-  }, 1000);
+  }, 2000);
 
 
   $('.line-1').css('opacity', '1');
@@ -113,5 +113,10 @@ $(document).ready(function() {
       // itemsTablet: false,
       // itemsMobile : false
 
+  });
+
+  $.get('./test.csv', function (data) {
+    var articles = $.csv.toObjects(data);
+    console.log(articles[0].title);
   });
 });
