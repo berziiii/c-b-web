@@ -1,3 +1,43 @@
+h1 {
+  font-size: 2em;
+  line-height: 44px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: -3px;
+}
+
+h2 {
+  font-size: 1.666em;
+  line-height: 38px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+}
+
+h3 {
+  font-size: 1.444em;
+  line-height: 34px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: -1px;
+}
+
+h4 {
+  font-size: 1.444em;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.25em;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .loading-section {
   position: fixed;
   height: 100vh;
@@ -99,10 +139,108 @@
   color: #fff;
 }
 
+.hero h6 {
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+.wedding-section {
+  color: #022648;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.wedding-section h1 {
+  color: #022648;
+  margin: 50px 0px;
+}
+
+.wedding-section h3 {
+  color: #022648;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  border-bottom: 1px solid #022648;
+}
+
+.wedding-section a {
+  color: #022648;
+  text-decoration: none;
+}
+
+.wedding-section a:hover,
+.wedding-section a:visited {
+  color: #022648;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wedding-section p {
+  font-size: 16px;
+}
+
+.quote,
+.quote h1 {
+  text-align: center;
+  margin: 60px 15px 40px 15px;
+  color: #022648;
+}
+
+.quote h6 {
+  color: #022648;
+  text-align: right;
+}
+
+.save-the-date-image-holder {
+  width: 100%;
+  height: 100%;
+  background: url("../images/marblehead-map.png") no-repeat center center;
+  background-size: cover;
+}
+
+.save-the-date-content-container {
+  width: 100%;
+  padding: 250px 0px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.accom-2 h1 {
+  margin-bottom: 60px;
+  margin-top: 25px;
+  color: #022648;
+}
+
+.rsvp h1,
+.rsvp-2 h1 {
+  color: #022648 !important;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+.registry h1 {
+  color: #022648;
+  margin-top: 25px;
+  margin-bottom: 60px !important;
+}
+
 .slide-item {
   width: 100%;
   height: 100%;
   background-color: #ccc;
+}
+
+a.footer-link {
+  color: #444 !important;
+  text-decoration: none;
+}
+
+a.footer-link:hover,
+a.footer-link:visited {
+  color: #444 !important;
+  text-decoration: none;
+}
+
+.footer h6 {
+  color: #444 !important;
 }
 
 .flex-container a:active,
@@ -407,6 +545,7 @@ html[xmlns] .slides {
 body {
   background: #eee;
   -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
 }
 
 .main-container,
@@ -507,7 +646,6 @@ ul {
 
 /*!---------- SECTIONS ----------*/
 section {
-  padding: 120px 0;
   background: #fff;
   overflow: hidden;
   position: relative;
@@ -571,9 +709,9 @@ section.bg-primary li {
 /*!---------- TYPOGRAPHY ----------*/
 body {
   font-family: "Libre Baskerville", "Georgia", Times New Roman, Time, serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 28px;
-  color: #444444;
+  color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -592,46 +730,6 @@ span a.logo {
   cursor: default;
 }
 
-h1 {
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-right: -3px;
-}
-
-h2 {
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-right: -2px;
-}
-
-h3 {
-  font-size: 26px;
-  line-height: 34px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-right: -1px;
-}
-
-h4 {
-  font-size: 26px;
-  line-height: 34px;
-  font-weight: 300;
-}
-
-h5 {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
 h6,
 .h6 {
   font-size: 12px;
@@ -642,88 +740,6 @@ h6,
   margin-right: -2px;
 }
 
-@media all and (max-width: 990px) {
-  h1 {
-    font-size: 46px;
-    line-height: 54px;
-    font-weight: 300;
-  }
-
-  h2 {
-    font-size: 38px;
-    line-height: 46px;
-    font-weight: 300;
-  }
-
-  h3 {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 300;
-  }
-
-  h4 {
-    font-size: 22px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-
-  h5 {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  h6 {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: -2px;
-  }
-}
-@media all and (max-width: 768px) {
-  h1 {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 300;
-  }
-
-  h2 {
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 300;
-  }
-
-  h3 {
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 300;
-  }
-
-  h4 {
-    font-size: 22px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-
-  h5 {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  h6 {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: -2px;
-  }
-}
 @media all and (max-width: 767px) {
   br {
     display: none;
@@ -1078,7 +1094,7 @@ nav.light.scrolled .line-3 {
 .header.light p,
 .header.light span,
 .header.light li {
-  color: #444444;
+  color: #444;
 }
 
 .header .container {
@@ -1410,7 +1426,7 @@ nav.light.scrolled .line-3 {
 .details-2.light p,
 .details-2.light span,
 .details-2.light li {
-  color: #444444;
+  color: #444;
 }
 
 .details-2 h1 {
@@ -1670,7 +1686,7 @@ nav.light.scrolled .line-3 {
 .accom-1.light p,
 .accom-1.light span,
 .accom-1.light li {
-  color: #444444;
+  color: #444;
 }
 
 .accom-1 h6 {

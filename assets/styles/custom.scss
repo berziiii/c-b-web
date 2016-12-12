@@ -105,10 +105,108 @@
   color: $white;
 }
 
+.hero h6 {
+  font-size: 18px;
+  padding-top: 30px;
+}
 
+.wedding-section {
+  color: $navy;
+  text-align: center;
+  background-color: $light-grey;
+}
+
+.wedding-section h1 {
+  color: $navy;
+  margin: 50px 0px;
+}
+
+.wedding-section h3 {
+  color: $navy;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  border-bottom: 1px solid $navy;
+}
+
+.wedding-section a{
+  color: $navy;
+  text-decoration: none;
+}
+
+.wedding-section a:hover,
+.wedding-section a:visited {
+  color: $navy;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wedding-section p {
+  font-size: 16px;
+}
+
+// Detail Section
+.quote,
+.quote h1 {
+  text-align: center;
+  margin: 60px 15px 40px 15px;
+  color: $navy;
+}
+
+.quote h6 {
+  color: $navy;
+  text-align: right;
+  // margin-bottom: 50px;
+}
+
+.save-the-date-image-holder {
+  width: 100%;
+  height: 100%;;
+  background: url('../images/marblehead-map.png') no-repeat center center;
+  background-size: cover;
+}
+
+.save-the-date-content-container {
+  width: 100%;
+  padding: 250px 0px;
+  background-color: rgba(0,0,0,.65);
+}
+
+.accom-2 h1 {
+    margin-bottom: 60px;
+    margin-top: 25px;
+    color: $navy;
+}
+
+.rsvp h1,
+.rsvp-2 h1 {
+  color: $navy !important;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+.registry h1 {
+  color: $navy;
+  margin-top: 25px;
+  margin-bottom: 60px !important;
+}
 
 .slide-item {
   width: 100%;
   height: 100%;
   background-color: #ccc;
+}
+
+a.footer-link {
+  color: $grey !important;
+  text-decoration: none;
+}
+
+a.footer-link:hover,
+a.footer-link:visited {
+  color: $grey !important;
+  text-decoration: none;
+}
+
+.footer h6{
+  color: $grey !important;
 }

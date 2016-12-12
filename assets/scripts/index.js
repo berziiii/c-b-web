@@ -8,7 +8,7 @@ $(document).ready(function() {
           $('#loading-icon').addClass('fade-out');
   }, 2000);
 
-
+  //
   $('.line-1').css('opacity', '1');
   $('.line-2').css('opacity', '1');
   $('.line-3').css('opacity', '1');
@@ -105,13 +105,6 @@ $(document).ready(function() {
       paginationSpeed : 400,
       singleItem: true,
       autoPlay: 4000,
-
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
 
   });
 

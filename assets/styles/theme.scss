@@ -24,6 +24,7 @@
 body {
   background: #eee;
   -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
 }
 .main-container,
 .nav-container,
@@ -112,7 +113,7 @@ ul {
 }
 /*!---------- SECTIONS ----------*/
 section {
-  padding: 120px 0;
+  // padding: 120px 0;
   background: $white;
   overflow: hidden;
   position: relative;
@@ -168,7 +169,7 @@ section.bg-primary li {
 /*!---------- TYPOGRAPHY ----------*/
 body {
   font-family: "Libre Baskerville", "Georgia", Times New Roman, Time, serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 28px;
   color: $grey;
   -webkit-font-smoothing: antialiased;
@@ -187,41 +188,6 @@ span a.logo {
   margin: 0;
   cursor: default;
 }
-h1 {
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-right: -3px;
-}
-h2 {
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-right: -2px;
-}
-h3 {
-  font-size: 26px;
-  line-height: 34px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-right: -1px;
-}
-h4 {
-  font-size: 26px;
-  line-height: 34px;
-  font-weight: 300;
-}
-h5 {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
 h6,
 .h6 {
   font-size: 12px;
@@ -232,76 +198,76 @@ h6,
   margin-right: -2px;
 }
 @media all and (max-width: 990px) {
-  h1 {
-    font-size: 46px;
-    line-height: 54px;
-    font-weight: 300;
-  }
-  h2 {
-    font-size: 38px;
-    line-height: 46px;
-    font-weight: 300;
-  }
-  h3 {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 300;
-  }
-  h4 {
-    font-size: 22px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-  h5 {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  h6 {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: -2px;
-  }
+  // h1 {
+  //   font-size: 46px;
+  //   line-height: 54px;
+  //   font-weight: 300;
+  // }
+  // h2 {
+  //   font-size: 38px;
+  //   line-height: 46px;
+  //   font-weight: 300;
+  // }
+  // h3 {
+  //   font-size: 32px;
+  //   line-height: 40px;
+  //   font-weight: 300;
+  // }
+  // h4 {
+  //   font-size: 22px;
+  //   line-height: 30px;
+  //   font-weight: 300;
+  // }
+  // h5 {
+  //   font-size: 16px;
+  //   line-height: 24px;
+  //   font-weight: 400;
+  //   text-transform: uppercase;
+  // }
+  // h6 {
+  //   font-size: 12px;
+  //   line-height: 20px;
+  //   font-weight: 700;
+  //   text-transform: uppercase;
+  //   letter-spacing: 2px;
+  //   margin-right: -2px;
+  // }
 }
 @media all and (max-width: 768px) {
-  h1 {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 300;
-  }
-  h2 {
-    font-size: 32px;
-    line-height: 38px;
-    font-weight: 300;
-  }
-  h3 {
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 300;
-  }
-  h4 {
-    font-size: 22px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-  h5 {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  h6 {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: -2px;
-  }
+  // h1 {
+  //   font-size: 40px;
+  //   line-height: 48px;
+  //   font-weight: 300;
+  // }
+  // h2 {
+  //   font-size: 32px;
+  //   line-height: 38px;
+  //   font-weight: 300;
+  // }
+  // h3 {
+  //   font-size: 24px;
+  //   line-height: 34px;
+  //   font-weight: 300;
+  // }
+  // h4 {
+  //   font-size: 22px;
+  //   line-height: 30px;
+  //   font-weight: 300;
+  // }
+  // h5 {
+  //   font-size: 16px;
+  //   line-height: 24px;
+  //   font-weight: 400;
+  //   text-transform: uppercase;
+  // }
+  // h6 {
+  //   font-size: 12px;
+  //   line-height: 20px;
+  //   font-weight: 700;
+  //   text-transform: uppercase;
+  //   letter-spacing: 2px;
+  //   margin-right: -2px;
+  // }
 }
 @media all and (max-width: 767px) {
   br {
@@ -360,6 +326,7 @@ a.logo:hover,
   background: #fcfcfc;
 }
 /*!---------- COVERED BACKGROUNDS ----------*/
+
 .background-image-holder {
   position: absolute;
   width: 100%;
