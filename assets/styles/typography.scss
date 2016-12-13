@@ -40,3 +40,15 @@ h5 {
 // h6 {
 //   font-size: 1em
 // }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.25em;
+  }
+}

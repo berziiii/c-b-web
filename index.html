@@ -16,12 +16,12 @@
 
 <body>
 
-  <!-- <div id="section-right" class="loading-section loading-left">
+  <div id="section-right" class="loading-section loading-left">
   </div>
   <div id="section-left" class="loading-section loading-right">
   </div>
   <div id="loading-icon" class="loading-icon">
-  </div> -->
+  </div>
 
   <div id="responsive-nav" class="hide-responsive-nav">
     <div class="close-nav">+</div>
@@ -53,6 +53,12 @@
       </li>
     </ul>
   </div>
+  <div id="success" class="alert alert-success" role="alert">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </div>
+  <div id="fail" class="alert alert-danger" role="alert">
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+  </div>
 
   <div class="nav-container">
     <nav class="nav nav-1 transparent light">
@@ -75,7 +81,6 @@
       </div>
     </nav>
   </div>
-
   <div class="main-container">
 
     <a id="home" class="in-page-link"></a>
@@ -191,42 +196,33 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-4 feature">
-            <a href="#">
-              <img alt="Hotel" src="assets/images/small5.jpg">
+          <div class="col-sm-4 feature accom-container">
+            <a href="https://www.bostonyc.org/hotel" target="_blank">
+              <img alt="Hotel"  class="accom-img" src="assets/images/byc-logo.png">
             </a>
-            <h6>Sheraton Flinders</h6>
+            <h6>Boston Yacht Club Hotel</h6>
             <p>
-              Mention our names when making your reservation to recieve the group booking discount.
-            </p>
-            <p>
-              767 Greenvale Road<br> Flinders Vic 3214
+              Spicy jalapeno bacon ipsum dolor amet exercitation ullamco esse consectetur. Prosciutto irure adipisicing commodo nulla. Ball tip adipisicing ex mollit capicola pariatur magna, sunt andouille ribeye.
             </p>
           </div>
 
-          <div class="col-sm-4 feature">
-            <a href="#">
-              <img alt="Hotel" src="assets/images/small6.jpg">
+          <div class="col-sm-4 feature accom-container">
+            <a href="https://www.airbnb.com/s/Marblehead--MA--United-States?checkin=06%2F16%2F2017&checkout=06%2F18%2F2017&guests=1&source=bb&allow_override%5B%5D=&page=1&place_id=ChIJbfnfxxMV44kRa_kIc9QsYzw&s_tag=nbf81Dnx" target="_blank">
+              <img alt="Hotel" class="accom-img" src="assets/images/airbnb.png">
             </a>
-            <h6>Camp Crusty, Flinders</h6>
+            <h6>Airbnb</h6>
             <p>
-              Limited cabins are available at Camp Krusty for groups with up to 8 guests.
-            </p>
-            <p>
-              122 Chilvers Avenue<br> Flinders, VIC 3214
+              Spicy jalapeno bacon ipsum dolor amet exercitation ullamco esse consectetur. Prosciutto irure adipisicing commodo nulla. Ball tip adipisicing ex mollit capicola pariatur magna, sunt andouille ribeye.
             </p>
           </div>
 
-          <div class="col-sm-4 feature">
-            <a href="#">
-              <img alt="Hotel" src="assets/images/small7.jpg">
+          <div class="col-sm-4 feature accom-container">
+            <a href="http://www3.hilton.com/en/hotels/massachusetts/hilton-boston-logan-airport-BOSLHHH/index.html" target="_blank">
+              <img alt="Hotel" class="accom-img" src="assets/images/hilton-logo.png">
             </a>
-            <h6>Flinders Country Club</h6>
+            <h6>Hilton Boston Logan Airport</h6>
             <p>
-              A great option for the budget-concious with rooms for up to 4 guests.
-            </p>
-            <p>
-              65 Chilvers Avenue<br> Flinders, VIC 3214
+              Spicy jalapeno bacon ipsum dolor amet exercitation ullamco esse consectetur. Prosciutto irure adipisicing commodo nulla. Ball tip adipisicing ex mollit capicola pariatur magna, sunt andouille ribeye.
             </p>
           </div>
         </div>
@@ -238,7 +234,7 @@
     <section id="registry-section" class="registry registry-1 registry-3 overlay-light parallax">
 
       <div class="background-image-holder">
-        <img alt="Background image" class="background-image" src="assets/images/hero6.jpg">
+        <!-- <img alt="Background image" class="background-image" src="assets/images/hero6.jpg"> -->
       </div>
 
       <div class="container registry">
@@ -250,13 +246,13 @@
 
         <div class="row">
           <div class="col-md-4 col-md-offset-2 col-sm-6 text-center">
-            <a href="#">
+            <a href="http://www.surlatable.com/" target="_blank">
               <img alt="Registry" src="assets/images/sur-la-table.png">
             </a>
           </div>
 
           <div class="col-md-4 col-sm-6 text-center">
-            <a href="#">
+            <a href="http://www.macys.com/" target="_blank">
               <img alt="Registry" src="assets/images/macys.png">
             </a>
           </div>
@@ -286,7 +282,7 @@
           <div class="col-sm-12 text-center">
             <h1>Say you'll be there</h1>
             <p>
-              Please let us know if you can make it by<br> July 10th at the latest, preesh!
+              Please let us know if you can make it by<br> February 28th, 2017 at the latest, preesh!
             </p>
           </div>
         </div>
@@ -294,13 +290,13 @@
         <div class="row">
           <div class="col-sm-12 text-center">
             <div class="form-wrapper">
-              <form class="form-email">
+              <form id="rsvp-form" class="form-email">
                 <div class="form-section">
-                  <input type="text" name="name" class="validate-required" placeholder="Your Name / Names">
+                  <input type="text" name="rsvp-names" class="validate-required" placeholder="Your Name / Names">
                   <div class="radio-group">
-                    <div class="radio-holder btn checked">
+                    <div class="radio-holder btn">
                       <span>Can't Wait</span>
-                      <input type="radio" name="rsvp" value="attending" checked="checked">
+                      <input type="radio" name="rsvp" value="attending">
                     </div>
                     <div class="radio-holder btn">
                       <span>Can't Come</span>
@@ -308,7 +304,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-section">
+                <!-- <div class="form-section">
                   <h6>Meal Preference</h6>
                   <div class="radio-group">
                     <div class="radio-holder naked checked">
@@ -324,9 +320,9 @@
                       <input type="radio" name="meal" value="veg-gf">
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="form-section">
-                  <input type="text" name="song" placeholder="Any Song Requests?">
+                  <input type="text" name="rsvp-songs" placeholder="Any Song Requests?">
                 </div>
                 <input type="submit" value="RSVP">
                 <div class="form-error">

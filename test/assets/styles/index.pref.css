@@ -38,6 +38,16 @@ h5 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.25em;
+  }
+}
 .loading-section {
   position: fixed;
   height: 100vh;
@@ -226,6 +236,11 @@ h5 {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
+@media screen and (max-width: 767px) {
+  .save-the-date-content-container {
+    padding: 150px 0px;
+  }
+}
 .accom-2 h1 {
   margin-bottom: 60px;
   margin-top: 25px;
@@ -245,10 +260,44 @@ h5 {
   margin-bottom: 60px !important;
 }
 
+.gallery {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
 .slide-item {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #ccc;
+}
+
+.test {
+  width: 100%;
+  height: auto;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.accom-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.owl-gallery,
+.gallery,
+.gallery-2 {
+  height: 100% !important;
+}
+
+.owl-controls {
+  display: none !important;
 }
 
 a.footer-link {
@@ -264,6 +313,17 @@ a.footer-link:visited {
 
 .footer h6 {
   color: #444 !important;
+}
+
+.alert {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-top: 60px;
+  position: fixed;
+  z-index: 1000;
 }
 
 .flex-container a:active,
@@ -677,11 +737,6 @@ section .container {
   z-index: 2;
 }
 
-@media all and (max-width: 767px) {
-  section {
-    padding: 60px 0;
-  }
-}
 section.fullscreen {
   height: 100vh;
   padding: 0;
@@ -826,7 +881,7 @@ a.logo:hover,
 
 /*!---------- COLOURS ----------*/
 .bg-secondary {
-  background: #fcfcfc;
+  background: #fff;
 }
 
 /*!---------- COVERED BACKGROUNDS ----------*/
@@ -1232,8 +1287,8 @@ nav.light.scrolled .line-3 {
 }
 @media all and (max-width: 767px) {
   .header h1 {
-    font-size: 80px;
-    line-height: 88px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 .header-1 {
