@@ -8,6 +8,10 @@ $(document).ready(function() {
           $('#loading-icon').addClass('fade-out');
   }, 2000);
 
+  setTimeout(function(){
+    $('#loading-icon').addClass('hide');
+  }, 4000);
+
   //
   $('.line-1').css('opacity', '1');
   $('.line-2').css('opacity', '1');
@@ -131,9 +135,6 @@ $(document).ready(function() {
     $(this).toggleClass('checked');
   });
 
-  $('#success').hide()
-  $('#fail').hide()
-
   $('#rsvp-form').on('submit', function(e) {
     e.preventDefault();
     var names = $("input[name=rsvp-names]").val();
@@ -148,15 +149,15 @@ $(document).ready(function() {
     var math = Math.random();
     if(math > .5) {
       console.log(math);
-      $('#success').show();
+      $('#success').removeClass('hide');
       setTimeout(function() {
-          $("#success").hide();
+          $("#success").addClass('hide');
       }, 3000);
     } else {
       console.log(math);
-      $('#fail').show();
+      $('#fail').removeClass('hide');
       setTimeout(function() {
-          $("#fail").hide();
+          $("#fail").addClass('hide');
       }, 3000);
     }
   });
