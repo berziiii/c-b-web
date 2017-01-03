@@ -1,15 +1,15 @@
 tmp
-dist/
-assets/styles/*.css
-assets/styles/*.css.*
-assets/scripts/*.min.js
-*.woff2
-*.woff
-*.svg
-*.png
-*.jpg
-*.ttf
-*.eot
+#dist/
+#assets/styles/*.css
+#assets/styles/*.css.*
+#assets/scripts/*.min.js
+#*.woff2
+#*.woff
+#*.svg
+#*.png
+#*.jpg
+#*.ttf
+#*.eot
 
 
 # Created by https://www.gitignore.io/api/node,osx,linux,windows,ruby,node,rails,express,ember

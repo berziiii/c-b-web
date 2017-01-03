@@ -53,12 +53,12 @@
       </li>
     </ul>
   </div>
-  <div id="success" class="alert alert-success hide" role="alert">
+  <!-- <div id="success" class="alert alert-success hide" role="alert">
     <strong>Well done!</strong> You successfully read this important alert message.
   </div>
   <div id="fail" class="alert alert-danger hide" role="alert">
     <strong>Oh snap!</strong> Change a few things up and try submitting again.
-  </div>
+  </div> -->
 
   <div class="nav-container">
     <nav class="nav nav-1 transparent light">
@@ -130,8 +130,8 @@
 
     <section class="save-the-date">
       <div class="quote">
-        <h1>“You can never cross the ocean until you have the courage to lose sight of the shore”</h1>
-        <h6> - Christopher Columbus - </h6>
+        <h1>“If you want to know how much I love you, count all the waves in the sea.”</h1>
+        <h6>&nbsp;</h6>
       </div>
       <div class="save-the-date-image-holder">
         <div class="save-the-date-content-container container">
@@ -202,7 +202,17 @@
             </a>
             <h6>Boston Yacht Club Hotel</h6>
             <p>
-              Spicy jalapeno bacon ipsum dolor amet exercitation ullamco esse consectetur. Prosciutto irure adipisicing commodo nulla. Ball tip adipisicing ex mollit capicola pariatur magna, sunt andouille ribeye.
+              The BYC has a tradition of creating and supporting some of the finest sailing events found anywhere on the East Coast of North America. Not only will we be having our reception at the BYC but it will also be where the Bridal party is staying. Once the Bridal party is set, there may be limited availability for rooms.
+            </p>
+          </div>
+
+          <div class="col-sm-4 feature accom-container">
+            <a href="http://www.salemwaterfronthotel.com/" target="_blank">
+              <img alt="Hotel" class="accom-img" src="assets/images/swhm-logo.png">
+            </a>
+            <h6>Salem Waterfront Hotel</h6>
+            <p>
+              The Salem Waterfront Hotel is located right next across the Salem harbor from Marblehead! We have reserved a block of rooms so Depending on the number of guests who use this option, we will be providing a shuttle to transport to the ceremony, reception and back to the hotel. More details to follow on this option. Please note, rooms need to be reserved by <strong><i>March 15th, 2017!</i></strong>
             </p>
           </div>
 
@@ -212,17 +222,7 @@
             </a>
             <h6>Airbnb</h6>
             <p>
-              Spicy jalapeno bacon ipsum dolor amet exercitation ullamco esse consectetur. Prosciutto irure adipisicing commodo nulla. Ball tip adipisicing ex mollit capicola pariatur magna, sunt andouille ribeye.
-            </p>
-          </div>
-
-          <div class="col-sm-4 feature accom-container">
-            <a href="http://www3.hilton.com/en/hotels/massachusetts/hilton-boston-logan-airport-BOSLHHH/index.html" target="_blank">
-              <img alt="Hotel" class="accom-img" src="assets/images/hilton-logo.png">
-            </a>
-            <h6>Hilton Boston Logan Airport</h6>
-            <p>
-              Spicy jalapeno bacon ipsum dolor amet exercitation ullamco esse consectetur. Prosciutto irure adipisicing commodo nulla. Ball tip adipisicing ex mollit capicola pariatur magna, sunt andouille ribeye.
+              Due to Marblehead being a small, ocean-front town, there are limited options for lodging. Due to this, we recommend looking for a place on AirBnB for the weekend - This also means you'll be in town and very close to all the action!
             </p>
           </div>
         </div>
@@ -282,7 +282,7 @@
           <div class="col-sm-12 text-center">
             <h1>Say you'll be there</h1>
             <p>
-              Please let us know if you can make it by<br> February 28th, 2017 at the latest, preesh!
+              Please let use know if you can make it by<br> February 28th, 2017 at the latest.
             </p>
           </div>
         </div>
@@ -290,39 +290,30 @@
         <div class="row">
           <div class="col-sm-12 text-center">
             <div class="form-wrapper">
-              <form id="rsvp-form" class="form-email">
+              <form id="rsvp-form" class="form-email" action="./mail/mail.php">
                 <div class="form-section">
-                  <input type="text" name="rsvp-names" class="validate-required" placeholder="Your Name / Names">
+                  <input type="text" name="names" class="validate-required" placeholder="Your Name / Names">
+                </div>
+                <div class="form-section">
+                  <input type="text" name="email" class="validate-email" placeholder="Your Email Address">
+                </div>
+                <div class="form-section">
+                  <input type="text" name="rsvp" placeholder="Attending / Not Attending">
+                </div>
+                <!-- <div class="form-section">
                   <div class="radio-group">
                     <div class="radio-holder btn">
-                      <span>Can't Wait</span>
+                      <span>Attending</span>
                       <input type="radio" name="rsvp" value="attending">
                     </div>
                     <div class="radio-holder btn">
-                      <span>Can't Come</span>
+                      <span>Not Attending</span>
                       <input type="radio" name="rsvp" value="not-attending">
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="form-section">
-                  <h6>Meal Preference</h6>
-                  <div class="radio-group">
-                    <div class="radio-holder naked checked">
-                      <span>Chicken</span>
-                      <input type="radio" name="meal" value="chicken" checked="checked">
-                    </div>
-                    <div class="radio-holder naked">
-                      <span>Beef</span>
-                      <input type="radio" name="meal" value="beef">
-                    </div>
-                    <div class="radio-holder naked">
-                      <span>Veg / GF</span>
-                      <input type="radio" name="meal" value="veg-gf">
                     </div>
                   </div>
                 </div> -->
                 <div class="form-section">
-                  <input type="text" name="rsvp-songs" placeholder="Any Song Requests?">
+                  <input type="text" name="songs" placeholder="Any Song Requests?">
                 </div>
                 <input type="submit" value="RSVP">
                 <div class="form-error">
@@ -331,6 +322,7 @@
                 <div class="form-success">
                   <span>Thanks for your RSVP!</span>
                 </div>
+
               </form>
             </div>
           </div>
@@ -353,7 +345,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h6><a class="footer-link" href="www.offpistedesigns.com" target="_blank">Off-Piste Designs</a> © 2016 - All Rights Reserved</h6>
+            <h6><a class="footer-link" href="www.offpistedesigns.com" target="_blank">Off-Piste Designs</a> © 2017 - All Rights Reserved</h6>
           </div>
         </div>
       </div>

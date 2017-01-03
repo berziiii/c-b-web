@@ -175,6 +175,12 @@ module.exports = function(grunt) {
                         'index.html',
                     ],
                     dest: 'dist/'
+                  },{
+                    cwd: './',
+                    src: [
+                        'mail/**',
+                    ],
+                    dest: 'dist/'
                   },
                 ],
                 verbose: true

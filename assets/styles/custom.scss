@@ -80,6 +80,7 @@
   color: $white;
   text-align: center;
   transition: all .25s ease-in;
+  padding-left: 0px !important;
 }
 
 .show-responsive-nav li,
@@ -259,4 +260,7 @@ a.footer-link:visited {
   margin-top: 60px;
   position: fixed;
   z-index: 1000;
+}
+.rsvp-2 .form-wrapper {
+  margin-bottom: 50px;
 }
