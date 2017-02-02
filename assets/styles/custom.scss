@@ -19,10 +19,10 @@
 .loading-icon {
   position: fixed;
   left: 40vw;
-  top: 40vh;
+  top: 38vh;
   z-index: 1001;
   vertical-align: middle;
-  background: url(../images/BC-logo.png) no-repeat center center;
+  background: url(../images/c-b-logo.png) no-repeat center center;
   background-size: cover;
   width: 20vw;
   height: 20vw;
@@ -263,4 +263,47 @@ a.footer-link:visited {
 }
 .rsvp-2 .form-wrapper {
   margin-bottom: 50px;
+}
+
+.accom-container:before,
+.registry-1 a:before,
+.registry-1 a img:before {
+  display: block;
+  border-top: 3px solid $navy;
+  padding-top: 5px;
+  content: '';
+  transform: scaleX(0.0001);
+  transition: transform .5s ease-in-out;
+}
+
+.accom-container:hover:before,
+.registry-1 a:hover:before,
+.registry-1 a img:hover:before{
+  transform: scaleX(1);
+  transition: transform .5s ease-in-out;
+}
+
+.menu > li,
+.menu > li > .inner-link {
+  color: $white !important;
+}
+
+.menu > li:before {
+  display: block;
+  border-top: 2px solid $white;
+  padding-top: 2px;
+  content: '';
+  transform: scaleX(0.0001);
+  transition: transform .15s ease-in-out;
+}
+
+.menu > li:hover:before{
+  transform: scaleX(1);
+  color: $white;
+  transition: transform .25s ease-in-out;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
 }

@@ -10,6 +10,7 @@ $(document).ready(function() {
 
   setTimeout(function(){
     $('#loading-icon').addClass('hide');
+    $('body').removeClass('no-scroll');
   }, 4000);
 
   //
