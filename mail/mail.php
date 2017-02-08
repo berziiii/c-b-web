@@ -26,8 +26,8 @@ if(isset($_POST)) {
 
 	$transport = Swift_SmtpTransport::newInstance('mail.offpistedesigns.com', 26)
   // $transport = Swift_SmtpTransport::newInstance('mail.offpistedesigns.com', 26, 'ssl')
-    ->setUsername('brian@offpistedesigns.com')
-    ->setPassword('Offp|steDesigns9998');
+    ->setUsername(<%EMAIL%>)
+    ->setPassword(<%PASSWORD%>);
 
   // $mailer = Swift_Mailer::newInstance($transport);
   //
