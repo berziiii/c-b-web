@@ -265,7 +265,16 @@ a.footer-link:visited {
   margin-bottom: 50px;
 }
 
-.accom-container:before,
+.accom-link {
+  text-decoration: none;
+  color: $navy
+}
+
+.accom-link:hover {
+  cursor: pointer;
+}
+
+// .accom-container:before,
 .registry-1 a:before,
 .registry-1 a img:before {
   display: block;
@@ -276,7 +285,7 @@ a.footer-link:visited {
   transition: transform .5s ease-in-out;
 }
 
-.accom-container:hover:before,
+// .accom-container:hover:before,
 .registry-1 a:hover:before,
 .registry-1 a img:hover:before{
   transform: scaleX(1);

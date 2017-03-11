@@ -416,7 +416,7 @@ section.fullscreen {
 
 section.fullscreen .container {
   position: relative;
-  top: 50%;
+  top: 65%;
   -ms-transform: translateY(-50%);
    -o-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -1839,6 +1839,7 @@ input[type="submit"]:focus {
 
 .form-success {
   background: #47c347;
+  margin: 30px 0px;
 }
 
 @media all and (max-width: 767px) {
@@ -2191,7 +2192,15 @@ a.footer-link:visited {
   margin-bottom: 50px;
 }
 
-.accom-container:before,
+.accom-link {
+  text-decoration: none;
+  color: #022648;
+}
+
+.accom-link:hover {
+  cursor: pointer;
+}
+
 .registry-1 a:before,
 .registry-1 a img:before {
   display: block;
@@ -2207,7 +2216,6 @@ a.footer-link:visited {
           transition: transform .5s ease-in-out;
 }
 
-.accom-container:hover:before,
 .registry-1 a:hover:before,
 .registry-1 a img:hover:before {
   -webkit-transform: scaleX(1);
@@ -2254,6 +2262,17 @@ a.footer-link:visited {
   position: fixed;
 }
 
+@media screen and (max-width: 1100px) {
+  .save-the-date-content-container {
+    padding: 150px 0px;
+  }
+
+  .header h1 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 300;
+  }
+}
 @media screen and (max-width: 767px) {
   .save-the-date-content-container {
     padding: 150px 0px;

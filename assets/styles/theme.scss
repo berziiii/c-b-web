@@ -133,7 +133,7 @@ section.fullscreen {
 }
 section.fullscreen .container {
   position: relative;
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -1356,6 +1356,7 @@ input[type="submit"]:focus {
 }
 .form-success {
   background: #47c347;
+  margin: 30px 0px;
 }
 @media all and (max-width: 767px) {
   .rsvp-2 .form-wrapper {
